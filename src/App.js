@@ -1,14 +1,14 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Starships from './pages/Starships'
-
+import Starships from './pages/Starships';
 import './App.css';
 
 function App() {
+  
   return (
     <>
       <Routes>
-        <Route path='/starships' element={<Starships />}/>
+        <Route path='/*' element={<Starships />}/>
       </Routes>
     </>
   )
