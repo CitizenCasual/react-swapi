@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { getAllStarships } from "../services/sw-api"
 import { Link } from 'react-router-dom'
-import StarshipPage from "./StarshipPage"
+// import StarshipPage from "./StarshipPage"
 
 const Starships = (props) => {
   const [results, setResults] = useState([])
@@ -19,7 +19,7 @@ const Starships = (props) => {
           <Link  key={starshipTitle.name} state={{ starshipTitle }} to='/starship-details'>
             <div className='starship'>
               <h3>{starshipTitle.name}</h3>
-            <StarshipPage />
+            {/* <StarshipPage /> */}
             </div>
           </Link>
         ))}

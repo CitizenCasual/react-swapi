@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import { getDetails } from '../services/sw-api'
 
 const StarshipPage = (props) => {
@@ -8,13 +7,13 @@ const StarshipPage = (props) => {
   const location = useLocation()
 
   useEffect(() => {
-    getDetails(location.state.starshipDetails.url)
+    getDetails(location.state.starshipTitle.url)
       .then(starshipDetails => setStarshipDetails(starshipDetails))
-  })
+  }, [])
 
   return (
     <div className='starship-details'>
-      <p>{starshipDetails.name}</p>
+      <p>hella</p>
     </div>
   )
 }
