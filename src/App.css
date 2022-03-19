@@ -37,17 +37,16 @@
   }
 }
 
-.starship-container {
+.starship-container, .details-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.starship {
+.starship, .starship-details {
   border: 1px solid black;
   display: flex;
-  
   justify-content: center;
   align-items: center;
   width: 300px;
