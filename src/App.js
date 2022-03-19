@@ -10,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Starships />}/>
-        <Route path='/starship-details' element={<StarshipDetails />}/>
+        <Route path='/starship' element={<StarshipDetails />}/>
       </Routes>
     </>
   )

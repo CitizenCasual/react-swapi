@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { getDetails } from '../services/sw-api'
 
-const StarshipPage = (props) => {
+const StarshipDetails = (props) => {
   const [starshipDetails, setStarshipDetails] = useState({})
   const location = useLocation()
 
@@ -14,9 +14,8 @@ const StarshipPage = (props) => {
   return (
     <div className='starship-details'>
       <p>hella</p>
-      <p>{starshipDetails.name}</p>
     </div>
   )
 }
 
-export default StarshipPage
+export default StarshipDetails
