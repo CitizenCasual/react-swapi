@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { getDetails } from '../services/sw-api'
+import { getStarshipDetails } from '../services/sw-api'
 
 const StarshipDetails = (props) => {
   const [starshipDetails, setStarshipDetails] = useState({})
-  const location = useLocation()
+  let location = useLocation()
 
   useEffect(() => {
-    getDetails(location.state.starshipTitle.url)
+    getStarshipDetails(location.state.starshipTitle.url)
       .then(starshipDetails => setStarshipDetails(starshipDetails))
   }, [])
 
   return (
     <div className='starship-details'>
       <p>hella</p>
+      <p>{starshipDetails.name}</p>
     </div>
   )
 }
