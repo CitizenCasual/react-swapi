@@ -14,6 +14,7 @@ const StarshipPage = (props) => {
   return (
     <div className='starship-details'>
       <p>hella</p>
+      <p>{starshipDetails.name}</p>
     </div>
   )
 }
