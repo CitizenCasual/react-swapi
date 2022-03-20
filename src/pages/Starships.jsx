@@ -18,7 +18,11 @@ const Starships = (props) => {
         {results.map((starshipTitle) => (
           <Link  key= {starshipTitle.name} state= {{ starshipTitle }} to='/starship'>
             <div className='starship'>
-              <h3>{starshipTitle.name}</h3>
+              <div class='card'>
+                <div class='card-body'>
+                  <h3>{starshipTitle.name}</h3>
+                </div>
+              </div>
             </div>
           </Link>
         ))}

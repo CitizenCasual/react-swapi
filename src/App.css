@@ -43,18 +43,24 @@
   justify-items: center;
   row-gap: 80px;
 }
-.starship, .starship-details {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  background-color: rgb(54, 78, 79);
-  color: rgb(249, 249, 249);
-}
+
 
 .details-container {
   display: flex;
   flex-direction: column;
+}
+
+.card {
+  background-color: rgb(54, 78, 79);
+  color: white;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#starship-details {
+  margin-left: 40rem;
+  margin-top: 10rem;
 }

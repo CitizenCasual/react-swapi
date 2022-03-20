@@ -16,13 +16,17 @@ const StarshipDetails = (props) => {
     <div className='details-container'>
       {starshipDetails.name ? 
       <>
-        <div className='starship-details'>
-        <p>Name: {starshipDetails.name}</p>
-        <p>Model: {starshipDetails.model}</p>
-        <Link to='/'>
-          Return
-        </Link>
-      </div>
+        <div id='starship-details' class='card'>
+          <div class='card-body'>
+            <div className='starship-details'>
+              <p>Name: {starshipDetails.name}</p>
+              <p>Model: {starshipDetails.model}</p>
+              <Link to='/'>
+                Return
+              </Link>
+            </div>
+          </div>
+        </div>
       </>
       :
       <>
