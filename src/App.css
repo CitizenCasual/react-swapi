@@ -37,7 +37,7 @@
   }
 }
 
-.starship-container, .details-container {
+.starship-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -52,4 +52,9 @@
   height: 200px;
   background-color: rgb(54, 78, 79);
   color: rgb(249, 249, 249);
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
 }
