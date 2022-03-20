@@ -65,5 +65,8 @@
   margin-top: 10rem;
 }
 
-
+.navbar-light .navbar-brand {
+  color: white;
+  margin-left: 33rem;
+}
 
